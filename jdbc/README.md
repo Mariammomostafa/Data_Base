@@ -2,7 +2,7 @@
 - This is initial way to connect java project to mysql RDBMS(Relational Data Base Management System )
 - uses standered 7 steps to connect to Data Base
 
-  ### import the package java.sql
+  ### have package java.sql [exists in java 8]
   ### load & register mysql driver
   ### stablish the connection
   ### create statement obj
