@@ -7,7 +7,6 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.mariam.sprin_jdbc.entity.Student;
-import com.mariam.sprin_jdbc.mapper.CustomResultSetExtractor;
 
 public class StudentDaoImpl implements StudentDao {
 
@@ -110,20 +109,11 @@ public class StudentDaoImpl implements StudentDao {
 	public List<Student> findStudentsByName(String name) {
 
 		String sql = "select * from student_details where name =?";
-		List<Student> students = jdbcTemplate.query(sql, new CustomResultSetExtractor(), name);
+		List<Student> students = jdbcTemplate.query(sql , new BeanPropertyRowMapper<Student>(Student.class), name);
 
 		System.out.println(students);
 
 		return students;
 	}
-
-	// using custom RowMapper
-	/*
-	 * @Override public Student findById(int id) {
-	 * 
-	 * String sql ="select * from student_details where id =?"; Student student=
-	 * jdbcTemplate.queryForObject(sql, new StudentRowMapper(), id); return student;
-	 * }
-	 */
 
 }
