@@ -10,9 +10,17 @@
  - #### Update list of students using batchUpdate() method with 2 ways :
     - using batchUpdate(sql ,List<Object[]>) method
     - using batchUpdate(sql , BatchPreparedStatementSetter anonymous inner class ) method 
- - #### Insert one student OR list of students using batchUpdate() method 
- - #### Delete student by id , ByNameOrAddress , delete all
- - #### fetch student by id , by Name , group them based on their address
+ - #### Insert
+    - one student
+    - list of students using batchUpdate() method 
+ - #### Delete
+   - by id
+   - ByNameOrAddress
+   - delete all
+ - #### fetch
+   - by id
+   - by Name
+   - group them based on their address
 
 ## Prerequisites
 - Java 17
