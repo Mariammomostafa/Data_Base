@@ -17,7 +17,6 @@ public class CustomResultSetExtractor implements ResultSetExtractor<List<Student
 	@Override
 	public List<Student> extractData(ResultSet rs) throws SQLException, DataAccessException {
 		
-		System.out.println("extractData() called ...");
 		List<Student> students = new ArrayList<>();
 		
 		while(rs.next()) {

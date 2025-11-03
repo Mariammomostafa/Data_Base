@@ -1,6 +1,7 @@
 package com.mariam.sprin_jdbc.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import com.mariam.sprin_jdbc.entity.Student;
 
@@ -14,6 +15,8 @@ public interface StudentDao {
 	
 	int updateStudent(Student student);
 	
+	int updateStudentList(List<Student> list);
+	
 	boolean deletStudentById(int id);
 	
 	int deleteBynameOrAddress(String name , String address);
@@ -21,7 +24,11 @@ public interface StudentDao {
 	void insert(List<Student> students);
 	
 	List<Student> findStudentsByName(String name);
+	
+	Map<String, List<String>> getStudentNamesByAddress();
 
 	boolean delete();
+
+	int updateStudentList2(List<Student> list);
 
 }
