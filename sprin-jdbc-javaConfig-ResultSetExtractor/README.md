@@ -5,12 +5,13 @@
 - create beans of JDBCTemplate & DataSource 
 - set up mysql RDBMS (server) & MySql workbench 8.0 as GUI
 - uses ResultSetExtractor interface to extracting results/records from ResultSet (convert each record to java object)
+
+##CRUD operations : 
 #### Update list of students using batchUpdate() method with 2 ways :
 - using batchUpdate(sql ,List<Object[]>) method
 - using batchUpdate(sql , BatchPreparedStatementSetter anonymous inner class ) method 
 #### Insert one student OR list of students using batchUpdate() method 
-
-
+#### Delete student by id , ByNameOrAddress , delete all
 
 ### Prerequisites
 - Java 17
