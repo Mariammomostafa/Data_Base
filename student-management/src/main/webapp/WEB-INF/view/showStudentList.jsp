@@ -13,10 +13,12 @@
 <body class="myFonts">
 
 	<h1 align="center">Student List</h1><hr>
+	
+	<a href="/student-management/">Home Page</a>
+	
 	<div align="center" class="container">
 
-		<table border="1" style="width: 70% , height: 90%">
-
+		<table border="1" style="width: 50% , height: 50%">
 			<thead>
 				<tr>
 					<td>Id</td>
@@ -26,7 +28,6 @@
 					<td>operations</td>
 				</tr>
 			</thead>
-
 			<c:forEach var="item" items="${studs}">
 
 				<tr>

@@ -6,6 +6,8 @@
 <body>
 <h2>Hello World!</h2>
 
-<a href="/student-management/register">Register</a>
+<a href="/student-management/register">Register</a><br><br>
+	  <a href="/student-management/showStudents" >student list</a><br><br>
+
 </body>
 </html>
