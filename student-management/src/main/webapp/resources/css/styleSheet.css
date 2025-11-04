@@ -1,0 +1,14 @@
+@charset "UTF-8";
+h1{
+	
+	color: red;
+}
+
+table{
+	
+	  margin-top: 0px;
+	
+}
+td, th {
+  padding: 8px; /* Adds 8 pixels of padding inside each cell */
+}
